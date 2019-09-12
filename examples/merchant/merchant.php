@@ -2,8 +2,7 @@
 
 /* 
  * Example on how you can generate a invoice on your merchant account
- * 
- * 
+ * on Litepay.ch
  */
 
 

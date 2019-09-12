@@ -22,18 +22,45 @@ $parameters = array(
     'address'=>$return_address,
     'method'=>$method,
     'callback'=> urlencode($callback_url),
-    'callback_req'=>1 //if you do not want to use this (callback) write 0
+    'callback_req'=>1 
   );
+
+// if you do not want to use callback. you can do
+/*
+$parameters = array(
+    'address'=>$return_address,
+    'method'=>$method,
+    'callback'=> '',
+    'callback_req'=>0
+  );
+ */
 
 $new_address = $litepay->receive($parameters);
 if($new_address->status == "success") { 
     $address = $new_address->input_address;
 }
-
-
 /*
  * you can use the data above to save it in db & check it later
  * save: $price, $invoice_id, $method, $return_address & $address
+ */
+
+/*
+checking if the address is paid (if you are not using callback)
+ * 
+$parameters = array(
+    'address'=>$address,
+    'method'=>$method
+);
+
+$check = $litepay->check($parameters);
+if ($check->status == 'success') {
+     $amount = $check->amount;
+     $confirmations = $check->confirmations;
+     $txids = $check->txids;
+ 
+ use the information above to confirm the payment & save it in db
+ * 
+
  */
 
 
