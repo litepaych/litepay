@@ -80,7 +80,7 @@ if ($data->status == 'success') {
 
 **INFORMATION**
 
-These plugins has been developed by litepay.ch<br />
+These plugins have been developed by litepay.ch<br/>
 More info on our API here: [https://litepay.ch/#api](https://litepay.ch/#api) <br />
 If you need any further support regarding our services you can contact us via:<br />
 E-mail: [info@litepay.ch](mailto:info@litepay.ch)<br />
