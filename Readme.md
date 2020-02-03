@@ -33,13 +33,12 @@ $return_address = '1BDesouFJaHyr7DejtGrq7K14D5gSbS4DT';
 $parameters = array(
     'address'=>$return_address,
     'method'=>$method,
-    'callback'=> urlencode($callback_url),
-    'callback_req'=>1
+    'callback'=> urlencode($callback_url)
   );
 
 $new_address = $litepay->receive($parameters);
 if($new_address->status == "success") { 
-    $address = $new_address->input_address;
+    $address = $new_address->address;
 }
 ```
 

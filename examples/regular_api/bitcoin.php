@@ -21,8 +21,7 @@ $return_address = '1BDesouFJaHyr7DejtGrq7K14D5gSbS4DT'; // your return address f
 $parameters = array(
     'address'=>$return_address,
     'method'=>$method,
-    'callback'=> urlencode($callback_url),
-    'callback_req'=>1 
+    'callback'=> urlencode($callback_url)
   );
 
 // if you do not want to use callback. you can do
@@ -30,14 +29,13 @@ $parameters = array(
 $parameters = array(
     'address'=>$return_address,
     'method'=>$method,
-    'callback'=> '',
-    'callback_req'=>0
+    'callback'=> ''
   );
  */
 
 $new_address = $litepay->receive($parameters);
 if($new_address->status == "success") { 
-    $address = $new_address->input_address;
+    $address = $new_address->address;
 }
 /*
  * you can use the data above to save it in db & check it later
