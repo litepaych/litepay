@@ -9,9 +9,9 @@ To successfully use this class, you need to import it in your project & call it.
 
 Our api requires some info from you, to be able to generate a address for your payment;
 
-$method -> Use 'btc' / 'ltc' / 'zec' / 'bch' / 'bsv' as a value for parameter method, based on entered value a Bitcoin, Litecoin, Zcash, Bitcoin Cash, Bitcoin SV address will be generated<br />
+$method -> Use 'btc' / 'ltc' / 'zec' / 'bch' as a value for parameter method, based on entered value a Bitcoin, Litecoin, Zcash, Bitcoin Cash address will be generated<br />
 
-$address -> Your Receiving Bitcoin/Litecoin/Zcash/BCASH/BitcoinSV Address (Where you would like the payment to be sent)<br />
+$address -> Your Receiving Bitcoin/Litecoin/Zcash/BCASH Address (Where you would like the payment to be sent)<br />
 
 $callback_url - The callback URL to be notified when a payment is received. Remember to URL Encode the callback URL when calling the create method. The domain must be valid, or else your request will be denied.<br />
 
@@ -61,6 +61,8 @@ $parameters = array(
     'vendor' => 'VENDOR_ID',
     'invoice' => $invoice_id,
     'secret' => 'PASSPHRASE',
+    'currency' => 'USD',
+    'email' => urlencode('user@email'),
     'price' => '2',
     'callbackUrl' => urlencode($callback_url),
     'returnUrl' => urlencode($return_url)
@@ -85,3 +87,4 @@ If you need any further support regarding our services you can contact us via:<b
 E-mail: [info@litepay.ch](mailto:info@litepay.ch)<br />
 Web: [https://litepay.ch](https://litepay.ch)<br />
 Twitter: [@litepaych](https://twitter.com/litepay_ch)<br />
+Telegram: [https://t.me/litepay_ch](https://t.me/litepay_ch)<br />
