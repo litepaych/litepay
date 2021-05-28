@@ -1,9 +1,5 @@
 <?php
 
-if (!extension_loaded('mcrypt')) {
-    throw new \Exception('mCrypt extension seems not to be installed');
-}
-
 if (!extension_loaded('curl')) {
     throw new \Exception('cURL extension seems not to be installed');
 }
