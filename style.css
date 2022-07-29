@@ -1,10 +1,9 @@
-// Variables
-$radius: 4px;
-
+@charset "UTF-8";
 /*Typography*/
 html {
   font: 16px "Open sans", sans-serif;
 }
+
 form label {
   font-size: 0.9em;
 }
@@ -13,6 +12,7 @@ form label {
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0;
@@ -20,6 +20,7 @@ body {
   width: 100%;
   height: 100%;
 }
+
 /* Form */
 form {
   margin: 2% auto;
@@ -27,11 +28,13 @@ form {
   width: 320px;
   color: #aaa;
   border: 0.1em solid #ddd;
-  border-radius: $radius;
+  border-radius: 4px;
 }
+
 .name {
   width: 100%;
 }
+
 .name input,
 .submit input,
 select,
@@ -40,20 +43,24 @@ textarea {
   height: 3em;
   text-indent: 0.5em;
   border: 0.1em solid #ddd;
-  border-radius: $radius;
+  border-radius: 4px;
   outline-color: #1abc9c;
 }
-.name input[name="surname"] {
+
+.name input[name=surname] {
   float: right;
 }
-.name input[type="mail"] {
+
+.name input[type=mail] {
   margin-top: 1em;
   width: 100%;
 }
-.name input[type="invoice"] {
+
+.name input[type=invoice] {
   margin-top: 1em;
   width: 100%;
 }
+
 .radio,
 .dropdown,
 .message,
@@ -61,22 +68,27 @@ textarea {
 .submit {
   margin-top: 1em;
 }
+
 .dropdown select,
 .message textarea,
 .submit input {
   width: 100%;
 }
+
 .dropdown select {
   color: #aaa;
 }
+
 .message textarea {
   height: 8em;
 }
+
 .radio input,
 .check input {
   position: relative;
   top: 1px;
 }
+
 .radio input:before,
 .check input:before {
   content: "";
@@ -86,12 +98,14 @@ textarea {
   width: 1em;
   height: 1em;
   background: #e9e9e9;
-  border-radius: $radius;
+  border-radius: 4px;
   transition: all 0.35s ease;
 }
+
 .radio input:before {
   border-radius: 50%;
 }
+
 .radio input:checked:before {
   top: -0.1em;
   left: -0.1em;
@@ -100,31 +114,30 @@ textarea {
   border: 0.35em solid #e9e9e9;
   background: #1abc9c;
 }
+
 .check input:checked:before {
-  content: "\f00c";
+  content: "";
   font-family: "fontAwesome";
   color: #1abc9c;
 }
+
 .check input:before {
   left: -0.1px;
 }
+
 .submit input {
-  //display: block;
-  //margin: auto;
-  //width: 99.5%;
   background: #1abc9c;
   color: #fff;
   border: 0;
-  border-bottom: $radius solid darken(#1abc9c, 7%);
+  border-bottom: 4px solid #169d82;
   font-size: 1em;
   font-weight: bold;
-  &:focus,
-  &:hover {
-    background: #16a085;
-    border-bottom-color: darken(#16a085, 7%);
-  }
-  &:active {
-    background: #1bc2a2;
-    border-bottom-color: darken(#1bc2a2, 7%);
-  }
+}
+.submit input:focus, .submit input:hover {
+  background: #16a085;
+  border-bottom-color: #12816b;
+}
+.submit input:active {
+  background: #1bc2a2;
+  border-bottom-color: #17a388;
 }
