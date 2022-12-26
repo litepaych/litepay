@@ -81,10 +81,12 @@ if ($data->status == 'success') {
 
 **INFORMATION**
 
-These plugins have been developed by litepay.ch<br/>
-More info on our API here: [https://litepay.ch/#api](https://litepay.ch/#api) <br />
-If you need any further support regarding our services you can contact us via:<br />
-E-mail: [info@litepay.ch](mailto:info@litepay.ch)<br />
-Web: [https://litepay.ch](https://litepay.ch)<br />
-Twitter: [@litepaych](https://twitter.com/litepay_ch)<br />
-Telegram: [https://t.me/litepay_ch](https://t.me/litepay_ch)<br />
+These documents have been developed by litepay.ch  
+More info on our API here: [https://litepay.ch/docs/](https://litepay.ch/docs/)
+If you need any further support regarding our services you can contact us via:  
+E-mail: [info@litepay.ch](mailto:info@litepay.ch)  
+Web: [https://litepay.ch](https://litepay.ch)  
+Twitter: [@litepay_ch](https://twitter.com/litepay_ch)  
+Telegram: [https://t.me/litepay_ch](https://t.me/litepay_ch)  
+Discord: [https://discord.gg/Za3j5Rb](https://discord.gg/Za3j5Rb)  
+Github: [https://github.com/litepaych/](https://github.com/litepaych/)
